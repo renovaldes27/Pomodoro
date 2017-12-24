@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2BF-wV-smN">
-                                <rect key="frame" x="94.5" y="120" width="187" height="182"/>
+                                <rect key="frame" x="94" y="120" width="187" height="182"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="184.5" translatesAutoresizingMaskIntoConstraints="NO" id="TcJ-7z-Voa">
                                         <rect key="frame" x="1.5" y="0.0" width="184" height="84"/>
@@ -95,7 +95,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eLD-Hg-86t">
-                                <rect key="frame" x="93.5" y="120" width="189" height="182"/>
+                                <rect key="frame" x="93" y="120" width="189" height="182"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="184.5" translatesAutoresizingMaskIntoConstraints="NO" id="J2s-FJ-xHd">
                                         <rect key="frame" x="1" y="0.0" width="187" height="84"/>

@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import AVFoundation
 
 class BreakViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
     
-    var seconds = 300 //This variable will hold a starting value of seconds. It could be any amount above 0.
+    var seconds = 10 //This variable will hold a starting value of seconds. It could be any amount above 0.
     var timer = Timer()
     var isTimerRunning = false //This will be used to make sure only one timer is created at a time.
+    
+    var endSoundEffect: AVAudioPlayer?
     
     @IBAction func startButtonTapped(_ sender: Any) {
         if(!isTimerRunning){
@@ -43,7 +46,23 @@ class BreakViewController: UIViewController {
     
     @objc func updateTimer() {
         self.seconds -= 1     //This will decrement(count down)the seconds.
+        
         timerLabel.text = timeString(time: TimeInterval(self.seconds)) //This will update the label.
+        
+        if(self.seconds == 0){
+            timer.invalidate()
+            isTimerRunning = false
+            
+            let path = Bundle.main.path(forResource: "gentle-alarm.mp3", ofType:nil)!
+            let url = URL(fileURLWithPath: path)
+            
+            do {
+                endSoundEffect = try AVAudioPlayer(contentsOf: url)
+                endSoundEffect?.play()
+            } catch {
+                // couldn't load file :(
+            }
+        }
     }
     
     override func viewDidLoad() {

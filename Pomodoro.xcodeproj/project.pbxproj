@@ -15,6 +15,7 @@
 		6F20BD431FE5B4D100E7A398 /* PomodoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F20BD421FE5B4D100E7A398 /* PomodoroTests.swift */; };
 		6F20BD4E1FE5B4D100E7A398 /* PomodoroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F20BD4D1FE5B4D100E7A398 /* PomodoroUITests.swift */; };
 		6F6CAD3D1FEDEEC4000A8656 /* BreakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F6CAD3C1FEDEEC4000A8656 /* BreakViewController.swift */; };
+		6FE685631FEF2E7000FA6007 /* gentle-alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FE685621FEF2E7000FA6007 /* gentle-alarm.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		6F20BD4D1FE5B4D100E7A398 /* PomodoroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroUITests.swift; sourceTree = "<group>"; };
 		6F20BD4F1FE5B4D100E7A398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F6CAD3C1FEDEEC4000A8656 /* BreakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakViewController.swift; sourceTree = "<group>"; };
+		6FE685621FEF2E7000FA6007 /* gentle-alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "gentle-alarm.mp3"; path = "../../../../Desktop/gentle-alarm.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				6F20BD341FE5B4D000E7A398 /* Assets.xcassets */,
 				6F20BD361FE5B4D000E7A398 /* LaunchScreen.storyboard */,
 				6F20BD391FE5B4D100E7A398 /* Info.plist */,
+				6FE685621FEF2E7000FA6007 /* gentle-alarm.mp3 */,
 			);
 			path = Pomodoro;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				6F20BD381FE5B4D000E7A398 /* LaunchScreen.storyboard in Resources */,
 				6F20BD351FE5B4D000E7A398 /* Assets.xcassets in Resources */,
 				6F20BD331FE5B4D000E7A398 /* Main.storyboard in Resources */,
+				6FE685631FEF2E7000FA6007 /* gentle-alarm.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
