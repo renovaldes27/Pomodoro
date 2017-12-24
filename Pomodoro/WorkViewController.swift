@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class WorkViewController: UIViewController {
     
@@ -17,6 +18,8 @@ class WorkViewController: UIViewController {
     var seconds = 1500 //This variable will hold a starting value of seconds. It could be any amount above 0.
     var timer = Timer()
     var isTimerRunning = false //This will be used to make sure only one timer is created at a time.
+    
+    var endSoundEffect: AVAudioPlayer?
 
     
     @IBAction func startButtonTapped(_ sender: Any){
@@ -47,6 +50,21 @@ class WorkViewController: UIViewController {
     @objc func updateTimer() {
         self.seconds -= 1     //This will decrement(count down)the seconds.
         timerLabel.text = timeString(time: TimeInterval(self.seconds)) //This will update the label.
+        
+        if(self.seconds == 0){
+            timer.invalidate()
+            isTimerRunning = false
+            
+            let path = Bundle.main.path(forResource: "not-kiddin.mp3", ofType:nil)!
+            let url = URL(fileURLWithPath: path)
+            
+            do {
+                endSoundEffect = try AVAudioPlayer(contentsOf: url)
+                endSoundEffect?.play()
+            } catch {
+                // couldn't load file :(
+            }
+        }
     }
     
     override func viewDidLoad() {

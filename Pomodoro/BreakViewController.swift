@@ -14,7 +14,7 @@ class BreakViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
     
-    var seconds = 10 //This variable will hold a starting value of seconds. It could be any amount above 0.
+    var seconds = 300 //This variable will hold a starting value of seconds. It could be any amount above 0.
     var timer = Timer()
     var isTimerRunning = false //This will be used to make sure only one timer is created at a time.
     
@@ -53,7 +53,7 @@ class BreakViewController: UIViewController {
             timer.invalidate()
             isTimerRunning = false
             
-            let path = Bundle.main.path(forResource: "gentle-alarm.mp3", ofType:nil)!
+            let path = Bundle.main.path(forResource: "not-kiddin.mp3", ofType:nil)!
             let url = URL(fileURLWithPath: path)
             
             do {
