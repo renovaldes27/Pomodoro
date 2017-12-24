@@ -14,7 +14,7 @@ class BreakViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
     
-    var seconds = 300 //This variable will hold a starting value of seconds. It could be any amount above 0.
+    var seconds = 300 //Ths variable will hold a starting value of seconds. It could be any amount above 0.
     var timer = Timer()
     var isTimerRunning = false //This will be used to make sure only one timer is created at a time.
     
@@ -68,8 +68,8 @@ class BreakViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        startButton.layer.cornerRadius = 4
-        resetButton.layer.cornerRadius = 4
+        startButton.layer.cornerRadius = 6
+        resetButton.layer.cornerRadius = 6
         
         startButton.frame = CGRect(x: 30, y: 30, width: 150, height: 150)
     }
@@ -78,16 +78,5 @@ class BreakViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

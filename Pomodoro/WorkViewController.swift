@@ -70,8 +70,8 @@ class WorkViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        startButton.layer.cornerRadius = 4
-        resetButton.layer.cornerRadius = 4
+        startButton.layer.cornerRadius = 6
+        resetButton.layer.cornerRadius = 6
         
         startButton.frame = CGRect(x: 30, y: 30, width: 150, height: 150)
 

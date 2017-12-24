@@ -64,7 +64,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.60738833740962261" green="0.96789684634523343" blue="0.65367118811187763" alpha="0.75928403253424659" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.90736040610000002" green="0.90736040610000002" blue="0.90736040610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2BF-wV-smN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="YHw-wl-iMo"/>
@@ -72,7 +72,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Work" id="TRB-ko-GzL">
+                    <tabBarItem key="tabBarItem" title="Work" image="sun" id="TRB-ko-GzL">
                         <color key="badgeColor" name="knobColor" catalog="System" colorSpace="catalog"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -148,7 +148,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hXF-Qh-YtA"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Break" id="4en-fV-bqk"/>
+                    <tabBarItem key="tabBarItem" title="Break" image="moon" springLoaded="YES" id="4en-fV-bqk"/>
                     <connections>
                         <outlet property="resetButton" destination="xUk-xH-xwg" id="dU8-Rl-m45"/>
                         <outlet property="startButton" destination="ZWI-VV-KAl" id="1NV-wZ-Igg"/>
@@ -167,6 +167,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="uBr-jQ-xfn"/>
@@ -180,6 +181,8 @@
     </scenes>
     <resources>
         <image name="apple" width="556" height="556"/>
+        <image name="moon" width="30" height="30"/>
+        <image name="sun" width="30" height="30"/>
         <image name="zzz" width="1200" height="1200"/>
     </resources>
 </document>
